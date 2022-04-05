@@ -48,7 +48,8 @@ let ajouterPanier = document.getElementById("addToCart");
 //Jécoute le bouton en vérifiant plusieur éléments au préalable.
 
 ajouterPanier.addEventListener("click" ,() => {
-    let produitChoisi = {
+    let produitChoisi = [];
+    produitChoisi = {
         id : idProduit,
         couleur : (couleur.value),
         quantite : (quantity.value),
