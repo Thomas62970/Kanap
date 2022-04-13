@@ -246,9 +246,9 @@ validation.addEventListener("click", (event) => {
   if(validFirstName == false || validLastName == false || validAddress == false || validCity == false || validEmail == false){
     alert("Verifier le formulaire")
   }
-//si les champs sont bien remplis alors je met dans un session storage les information renseignées par le client 
+//si les champs sont bien remplis alors je met dans un local storage les information renseignées par le client 
   else{
-    sessionStorage.setItem("contact", JSON.stringify(contact));
+    localStorage.setItem("contact", JSON.stringify(contact));
 //je créer une boucle pour récupérer chaque id des produits présents dans le panier
     for (let i = 0; i < panier.length; i++) {
       products.push(panier[i].id);
