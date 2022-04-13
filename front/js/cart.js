@@ -275,7 +275,7 @@ validation.addEventListener("click", (event) => {
                 }
             })
             .then((data) => {
-                let commandeId = data.commandeId;
+                let commandeId = data.orderId;
                 window.location.assign("confirmation.html?id=" + commandeId);
             })
   }
